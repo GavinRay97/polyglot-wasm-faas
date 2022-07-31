@@ -4,6 +4,10 @@ This project is an example of how you can use GraalVM's `Polyglot` functionality
 
 > Disclaimer: This project is not production-ready. In particular, there are several optimizations which can be made in regards to GraalVM evaluation by defining a shared `Engine`, better caching of `Source` values, etc.
 
+By the end of this 5-minute read, we'll have an app that can deploy both the below Rust function (as WASM), and the below JavaScript function to an API endpoint:
+- Rust: https://github.com/GavinRay97/polyglot-wasm-faas/blob/2760f118753b29e51e1b25a7a2d9cbc6808f30b5/src/test/resources/rust-wasm-samples/hello-wasm/src/lib.rs#L17-L25
+- JavaScript: https://github.com/GavinRay97/polyglot-wasm-faas/blob/2760f118753b29e51e1b25a7a2d9cbc6808f30b5/src/test/resources/bundles/javascript/handler.js#L1-L4
+
 ## How it works
 
 At the end, what we'd like to end up with is:
